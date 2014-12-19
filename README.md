@@ -6,9 +6,9 @@ WIP for the Elixir Quiz: [2048 game clone](http://elixirquiz.github.io/2014-12-1
 # How to use:
 ```
 $ git clone git@github.com:Tuxified/elixir_quiz-game_2048.git
-$ cd game_2048
+$ cd elixir_quiz-game_2048
 $ iex -S mix
-iex(1)>Game_2048.start
+iex(1)> Game_2048.start
 ```
 
 Use hjkl (vi keys, followed by a return) to move left,down,up,right(respectively).
