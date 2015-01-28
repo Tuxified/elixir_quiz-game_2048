@@ -14,7 +14,7 @@ defmodule Game_2048 do
   def print_board(board) do
     IO.ANSI.format([:home, :clear]) |>
     IO.puts
-    # IO.write("\e[H\e[2J")
+
     Enum.each board, fn row ->
       Enum.intersperse(row, "\t") |>
       Enum.join |>
@@ -120,7 +120,7 @@ defmodule Game_2048 do
       [ nil,  nil,  nil,  nil ],
       [ nil,  nil,  nil,  nil ],
       [ nil,  nil,  nil,  nil ],
-      [ nil,  nil,  nil,  nil],
+      [ nil,  nil,  nil,  nil ],
     ] |> new_tile |> new_tile
   end
 
@@ -144,7 +144,11 @@ defmodule Game_2048 do
 
   def to_board(list), do: Enum.chunk(list, 4)
 
-  def to_replace({_v, index}, list), do: List.replace_at(list, index, 2)
+  def to_replace({_v, spot}, list) do
+    :random.seed(:os.timestamp)
+    two_or_four = :random.uniform(2) * 2
+    List.replace_at(list, spot, two_or_four)
+  end
 
   def transpose(board) do
     board |>
