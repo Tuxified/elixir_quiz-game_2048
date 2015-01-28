@@ -15,7 +15,7 @@ Use hjkl (vi keys, followed by a return) to move left,down,up,right(respectively
 
 # TODO
 
-- new tile should be random of 2 or 4 (currently always 2)
+~~- new tile should be random of 2 or 4 (currently always 2)~~
 - check for game end status (no moves possible or reached 2048)
 - keep track of score
 - improve board layout (currently using tabs between tiles)
