@@ -1,4 +1,4 @@
-Game_2048
+Game_2048 [![Build Status](https://travis-ci.org/Tuxified/elixir_quiz-game_2048.svg?branch=master)](https://travis-ci.org/Tuxified/elixir_quiz-game_2048)
 =========
 
 WIP for the Elixir Quiz: [2048 game clone](http://elixirquiz.github.io/2014-12-13-2048-game.html)
